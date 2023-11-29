@@ -1,9 +1,15 @@
+.head{
+    background-image: url(pets1.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
 .headerContainer{
     width: 100%;
     height: 80px;
-    background-color: olivedrab;
-    display: inline-flex;
     height: 110px;
+    display: inline-flex;
+    background-color:rgb(153, 129, 152);
     border-radius: 10px;
 }
 .i{
@@ -17,14 +23,13 @@
 .tab h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
-    color: ivory;
+    color: rgb(232, 232, 217);
     margin-left: 20px;
 }
 .tab{
    width: 100%;
-   height: auto;
-   margin: auto;
-   display: flex;
+   height: 100%;
+   display: inline-flex;
    justify-content: space-between;
    align-items: center;  
 }
@@ -41,9 +46,9 @@
     font-weight: bold;
     cursor: pointer;
 }
-.tab ul li:second-child{
+/* .tab ul li:first-child{
     color: blue;
-}
+} */
 .tab ul li:hover{
     color: blue;
 }
@@ -64,24 +69,73 @@
     background-color: blue;
     color: ivory;
 }
-
+.content{
+    width: 100%;
+    height: 100vh;
+    background-color: none;
+    margin: auto;
+}
+.content h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 50px;
+    color: ivory;
+}
+.content h3{ 
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style:unset;
+    font-size: 18px;
+    color:rgb(94, 11, 132);
+    margin-left: 1%;
+}
+.content .btn{
+    margin-left: 1%;
+    margin-right: 20px;
+    width: 200px;
+    height: 55px;
+    border-radius: 10px;
+    font-size: 20px;
+    border: 5px solid ivory;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-color: ivory;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+.content .btn:hover{
+    background-color: ivory;
+    color: blue;
+}
+.fundi{
+    display: flex;
+    justify-content: flex-start;
+    font-style: bold;
+    font-style: italic;
+    background-color:rgb(153, 129, 152);
+    width: 100%;
+    border-radius: 10px;
+}
+/* Services */
 .about {
     text-align: left;
     display: inline-block;
+    padding: 30px;
     padding: 10px;
     border: 2px solid #c574bc;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 85%;
+    width: 98.7%;
+    margin-bottom: 2%;
     border-radius: 8px;
-    margin-top: 15%;
+    margin-top: 2%;
+    background-color: #f0daed;
 }   
 
 .about h4 p{
-    display: inline-flex;
-
-}
-.container {
     display: flex;
     justify-content: space-between;
   } 
@@ -90,10 +144,21 @@
     display: inline-block;
     justify-content: space-between;
     display: flex;
+    margin: 30px; 
 }
 .pet2 {
     text-align: left;
     display: inline-block;
     justify-content: space-between;
-    display: flex;
+    display: flex; 
+    margin: 30px;
 }
+.photos{
+    display: flex;
+    justify-content: space-evenly;
+   /* width: 90%;*/
+    flex-wrap: wrap;
+    margin: 30px;
+}
+
+
