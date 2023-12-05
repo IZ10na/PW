@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Home.css">
+    <style>
+body{
+    background-image:url(qeni2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+    </style>
+</head>
+<body>
+    <div class="lg">
+    <div class="Services">
+        <div class="headerContainer">
+            <img src="petlogo.jpg" alt="logo" class="i"> 
+            <div class="tab">
+                <!-- <div class="logoAndCatalog"> -->
+                
+                <h2>Pet Shop</h2>
+                <!-- </div> -->
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>About</li>
+                    <li>Pets</li>
+                </ul>
+                <button class="btn"><ion-icon name="call-outline"></ion-icon>(+383)49-381-881</button>
+             </div>
+        </div>
+    <div class="valid">
+            <center><h2 style="color: rgb(219, 140, 195); margin-right:50% ;">Log In</h2></center>
+
+        <form class="myForm" id="myForm" onclick="validation()">
+                <label>Username: </label>
+            <input type="text" id="username">
+            <div class="error-message" id="usernameError"> </div>
+    
+            <label>Password:</label>
+            <input type="password" id="password">
+            <div class="error-message" id="passwordEmail"> </div>
+       
+    
+            <button type="submit">Submit</button>
+    
+          </form>
+          
+        <script>     
+            let usernameRegex = /^[A-Z][a-z]{4,14}$/;
+          
+            let passwordRegex = /^[A-Z][a-z]+[0-9]{3}$/;
+     
+            function validation(){
+                
+                 let userInput = document.getElementById('username');
+                 let userError = document.getElementById('usernameError');
+         
+                 let passwordInput = document.getElementById('password');
+                 let passwordError = document.getElementById('passwordError');
+
+                 usernameError.innerText = '';
+                 passwordError.innerText = '';
+     
+     
+             if(!usernameRegex.test(usernameInput.value)){
+                 usernameError.innerText = 'username duhet te shenohet me shkronje te madhe, size 4-9';
+                 return;
+             }
+            
+     
+            }
+            //alert('success!');
+     
+           </script>
+</div>
+    </div>
+</body>
+</html>
