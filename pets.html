@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Shop - Pets</title>
+    <link rel="stylesheet" href="Home.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+</head>
+<body>
+    <div class="headerContainer">
+        <!-- <img src="petlogo.jpg" alt="logo" class="i">  -->
+        <div class="tab">
+            <!-- <div class="logoAndCatalog"> -->
+            
+              <h2><ion-icon name="storefront"></ion-icon> Pet Shop</h2>
+            <!-- </div> -->
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="services.html">About</a></li>
+                <li><a href="pets.html">Pets</a></li>
+            </ul>
+            <button class="btn"><ion-icon name="call-outline"></ion-icon>(+383) 49-381-881</button>  
+        </div>
+    </div>
+    <div class="swiperWrapper">
+        <div class="swiper bookSwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <center style="color: rgb(153, 129, 152); font-size: 35px;">Cats</center><img class="slideImage" src="zoi.jpg" alt="cats" />
+            </div>
+            <div class="swiper-slide">
+              <center style="color: rgb(153, 129, 152); font-size: 35px;">Dogs</center><img class="slideImage" src="dogPro.webp" alt="dogs" />
+            </div>
+            <div class="swiper-slide">
+              <center style="color: rgb(153, 129, 152); font-size: 35px;">Rabbits</center><img class="slideImage" src="rabbit.jpg" alt="rabbit" />
+            </div>
+            <div class="swiper-slide">
+              <center style="color: rgb(153, 129, 152); font-size: 35px;">Fishes</center> <img class="slideImage" src="fish.jpg" alt="fish" />
+            </div> 
+            <div class="swiper-slide">
+              <center style="color: rgb(153, 129, 152); font-size: 35px;">Snakes</center><img class="slideImage" src="snake.jpeg" alt="snake" />
+              </div>
+              <div class="swiper-slide">
+                <center style="color: rgb(153, 129, 152); font-size: 35px;">Birds</center><img class="slideImage" src="Birds.jpg" alt="Bird" />
+              </div>
+              <div class="swiper-slide">
+                <center style="color: rgb(153, 129, 152); font-size: 35px;">Turtles</center><img class="slideImage" src="Turtoise.png" alt="Turtles" />
+              </div>
+              <div class="swiper-slide">
+                <center style="color: rgb(153, 129, 152); font-size: 35px;">Hamsters</center><img class="slideImage" src="Hamsters.jpeg" alt="Hamsters" />
+              </div>
+          </div>
+        </div>
+      <!-- </div> -->
+      <div class="next"><img src="forward.png" alt=""></div>
+      <div class="prev"><img src="back.png" alt=""></div>
+    </div>
+    <!-- script for ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- script for photo scrolling -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+      <script>
+        var swiper = new Swiper(".bookSwiper", {
+          slidesPerView: 3,
+          spaceBetween: 15,
+          loop:true,
+          autoplay: {
+          delay: 5500,
+          disableOnInteraction: false,
+        },
+          navigation: {
+            nextEl: ".next",
+            prevEl: ".prev",
+          },
+        });
+        </script>
+        <footer>
+          <div class="fundi">
+              <p style="margin-left: 1%;">Copyright 2023 Paws and Claws Company.</p>
+              <p style="margin-left: 25%;"> All rights reserved ©</p>
+              <p style="margin-left: 25%;">Designed by: ELona Hyseni and Drin Avdiaj</p>
+          </div>
+      </footer>
+</body>
+</html>

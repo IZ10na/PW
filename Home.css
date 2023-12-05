@@ -24,7 +24,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     color: rgb(232, 232, 217);
-    margin-left: 20px;
+    margin-left: 25px;
 }
 .tab{
    width: 100%;
@@ -153,12 +153,60 @@
     display: flex; 
     margin: 30px;
 }
+.pet3 {
+    text-align: left;
+    display: inline-block;
+    justify-content: space-between;
+    display: flex; 
+    margin: 30px;
+}
 .photos{
     display: flex;
     justify-content: space-evenly;
    /* width: 90%;*/
     flex-wrap: wrap;
     margin: 30px;
+    border-radius: 30%;
 }
+/* Pets */
+.swiperWrapper{
+    padding-inline: 5%;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 50px;
+    justify-content: center;
+}
+.slideImage{
+    margin-bottom: 30%;
+    width: 100%; 
+    height: 400px;
+    object-fit: cover;
+}
+.prev{
+    position: absolute;
+    left: 3%;
+    top: 40%;
+    transform: translateX(-50%);
+}
+.next{
+    position: absolute;
+    right: 1%;
+    top: 40%;
+    transform: translateX(-50%);
+}
+
+.prev hoover{
+    background-color: blue;
+    color: ivory;
+}
+.prev img{
+    width: 32px;
+    color: ivory;
+}
+.next img{
+    width: 32px;
+}
+
+
 
 
