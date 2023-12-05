@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hebdnew</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .slider-container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .slide {
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide" style="background-image: url('image1.jpg');"></div>
+            <div class="slide" style="background-image: url('image2.jpg');"></div>
+            <div class="slide" style="background-image: url('image3.jpg');"></div>
+            <!-- Add more slides as needed -->
+        </div>
+    </div>
+    
+    <script>
+        function validateForm() {
+            // Reset error messages
+            document.getElementById('usernameError').textContent = '';
+            document.getElementById('passwordError').textContent = '';
+
+            // Get values from the form
+            var username = document.getElementById('username').value;
+            var password = document.getElementById('password').value;
+
+            // Simple validation
+            if (username.trim() === '') {
+                document.getElementById('usernameError').textContent = 'Username is required';
+                return false;
+            }
+
+            if (password.trim() === '') {
+                document.getElementById('passwordError').textContent = 'Password is required';
+                return false;
+            }
+
+            // Additional validation logic can be added here
+
+            // If the form is valid, return true to allow submission
+            return true;
+        }
+    </script>
+</body>
+</html>

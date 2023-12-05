@@ -54,7 +54,7 @@
 }
 .tab .btn{
     margin-right: 20px;
-    width: 200px;
+    width: 205px;
     height: 55px;
     border-radius: 12px;
     font-size: 20px;
@@ -81,12 +81,12 @@
     font-size: 50px;
     color: ivory;
 }
-.content h3{ 
+.content h2{ 
     margin-top: 5%;
     font-family: Arial, Helvetica, sans-serif;
     font-style:unset;
     font-size: 18px;
-    color:rgb(94, 11, 132);
+    color:rgb(106, 68, 124);
     margin-left: 1%;
 }
 .content .btn{
@@ -103,7 +103,7 @@
     background-color: transparent;
     border-color: ivory;
     border-radius: 10px;
-    margin-top: 50px;
+    margin-top: 5px;
 }
 .content .btn:hover{
     background-color: ivory;
@@ -118,7 +118,11 @@
     width: 100%;
     border-radius: 10px;
 }
+
+
 /* Services */
+
+
 .about {
     text-align: left;
     display: inline-block;
@@ -168,7 +172,10 @@
     margin: 30px;
     border-radius: 30%;
 }
+
 /* Pets */
+
+
 .swiperWrapper{
     padding-inline: 5%;
     box-sizing: border-box;
@@ -207,64 +214,34 @@
     width: 32px;
 }
 
-.login-container {
-     background-color: #f4c1ee;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 300px;
-    text-align: center;
-    
-}
 
-.login-container h2 {
-    margin: 20px 0;
-    color: #333;
-}
 
-.login-form {
-    padding: 20px;
-}
+/* for Sign In */
 
-.form-group {
-    margin-bottom: 20px;
+.myForm{
+    margin-top: 15%;
+    justify-content: space-between;
 }
-
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #555;
+.signup{
+    background-size: cover;
+    background-position: center;
 }
-
-.form-group input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+.text{
+    border-radius: 30%;
 }
-
-.form-group button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.form-group button:hover {
-    background-color: #2980b9;
+.valid{
+    border-radius: 30px;
+    margin-left: 3%;
+    margin-right: 80%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 .myForm {
     background-color: transparent;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 50px 60px rgba(0, 0, 0, 8);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 8);
     border: 2% ;
-
 }
 
 label {
@@ -274,8 +251,7 @@ label {
 }
 
 input {
-    width: 70%;
-    margin-top: 1%;
+    width: 100%;
     padding: 8px;
     margin-bottom: 16px;
     box-sizing: border-box;
@@ -301,14 +277,112 @@ button {
 button:hover {
     background-color: #45a049;
 }
+
+
+/* for Log In */
+
+.login-container {
+    background-color: #f4c1ee;
+   border-radius: 8px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+   overflow: hidden;
+   width: 300px;
+   text-align: center;
+   
+}
+
+.login-container h2 {
+   margin: 20px 0;
+   color: #333;
+}
+
+.login-form {
+   padding: 20px;
+}
+
+.form-group {
+   margin-bottom: 20px;
+}
+
+.form-group label {
+   display: block;
+   margin-bottom: 8px;
+   font-weight: bold;
+   color: #555;
+}
+
+.form-group input {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.form-group button {
+   background-color: #3498db;
+   color: #fff;
+   padding: 10px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   width: 100%;
+}
+
+.form-group button:hover {
+   background-color: #2980b9;
+}
+.myForm {
+   background-color: transparent;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0 50px 60px rgba(0, 0, 0, 8);
+   border: 2% ;
+
+}
+
+label {
+   display: block;
+   margin-bottom: 8px;
+   font-weight: bold;
+}
+
+input {
+   width: 70%;
+   margin-top: 1%;
+   padding: 8px;
+   margin-bottom: 16px;
+   box-sizing: border-box;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+}
+
+.error-message {
+   color: #ff6347;
+   margin-bottom: 16px;
+}
+
+button {
+   background-color: #4caf50;
+   color: #fff;
+   padding: 10px 10px;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   font-size: 16px;
+}
+
+button:hover {
+   background-color: #45a049;
+}
 .lg{
-    background-size: cover;
-    background-position: center;
+   background-size: cover;
+   background-position: center;
 }
 .valid{
-    border-radius: 30px;
-    margin-left: 2%;
-    margin-right: 80%;
-    margin-top: 5%;
-    margin-bottom: 5%;
+   border-radius: 30px;
+   margin-left: 2%;
+   margin-right: 80%;
+   margin-top: 5%;
+   margin-bottom: 5%;
 }
