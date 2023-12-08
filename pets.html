@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop - Pets</title>
     <style>
+        .animals{
+            margin-left: 60%;
+        }
+        .slideshow-image {
+        font-size: 35px; 
+        /* qitu jom munu me ndreq  */
+    }
       body{
           background-color: rgb(192, 220, 231);
       }
   </style>
     <link rel="stylesheet" href="Home.css">
-    <!-- <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script> -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
@@ -19,12 +24,8 @@
 </head>
 <body>
     <div class="headerContainer">
-        <!-- <img src="petlogo.jpg" alt="logo" class="i">  -->
-        <div class="tab">
-            <!-- <div class="logoAndCatalog"> -->
-            
+        <div class="tab">          
               <h2><ion-icon name="storefront"></ion-icon> Pet Shop</h2>
-            <!-- </div> -->
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -34,60 +35,59 @@
             <button class="btn" style="width: 210px;"><ion-icon name="call-outline"></ion-icon>(+383) 49-381-881</button>  
         </div>
     </div>
-    <div class="swiperWrapper">
-        <div class="swiper bookSwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <center style="color: rgb(153, 129, 152); font-size: 35px;">Cats</center><img class="slideImage" src="zoi.jpg" alt="cats" />
-            </div>
-            <div class="swiper-slide">
-              <center style="color: rgb(153, 129, 152); font-size: 35px;">Dogs</center><img class="slideImage" src="dogPro.webp" alt="dogs" />
-            </div>
-            <div class="swiper-slide">
-              <center style="color: rgb(153, 129, 152); font-size: 35px;">Rabbits</center><img class="slideImage" src="rabbit.jpg" alt="rabbit" />
-            </div>
-            <div class="swiper-slide">
-              <center style="color: rgb(153, 129, 152); font-size: 35px;">Fishes</center> <img class="slideImage" src="fish.jpg" alt="fish" />
-            </div> 
-            <div class="swiper-slide">
-              <center style="color: rgb(153, 129, 152); font-size: 35px;">Snakes</center><img class="slideImage" src="snake.jpeg" alt="snake" />
-              </div>
-              <div class="swiper-slide">
-                <center style="color: rgb(153, 129, 152); font-size: 35px;">Birds</center><img class="slideImage" src="Birds.jpg" alt="Bird" />
-              </div>
-              <div class="swiper-slide">
-                <center style="color: rgb(153, 129, 152); font-size: 35px;">Turtles</center><img class="slideImage" src="Turtoise.png" alt="Turtles" />
-              </div>
-              <div class="swiper-slide">
-                <center style="color: rgb(153, 129, 152); font-size: 35px;">Hamsters</center><img class="slideImage" src="Hamsters.jpeg" alt="Hamsters" />
-              </div>
-          </div>
+        <div id="kontenti">
+        <header>
+            <!-- <h2>Slide Show:shfaqja e imazheve</h2> -->
+          <img  id="slideshow"/>
+        </header>
+        <button onclick="changeImg()">Next</button>
+        <div class="animals">
+        <h3>Nemo</h3>
+        <p>Nemo is a clownfish, a type of fish belonging to the <br> family Pomacentridae. 
+            More specifically, he is an Ocellaris clownfish. <br>
+            It is a small, bright, and banded fish, known for its <br>striking coloration and fascinating behavior.
+                </p>
+                <h3>Petter</h3>
+                <p>Peter is a female rabbit, very clever <br>
+                    Female rabbits  in general can have a new litter  <br>of kits every two to three months. 
+                    If something happens to her litter,  <br>she will breed again even sooner.</p>
+          
+        <h3>Ivy</h3> 
+        <p> Ivy is a hamster, very cute one! <br>
+            Hamsters are some of the most popular pets today. <br>
+            Their adorable appearance, fun personality, <br>
+            and relative ease of care makes them a great choice for <br> all households and all ages.
+        </p>
+        <h3>Ebi</h3>
+        <p>Ebi is a snake, people should avoid large  <br> constricting snakes, 
+            venomous snakes, and snakes with more <br>difficult care  requirements, which Ebi it is not one of those
+        </p>
+        <h3>Ella</h3>
+        <p>Ella is a pet tortoise,their kind are popular pets for <br> many people since they are quiet, cute especially as hatchlings, <br>
+             and don't shed any fur. But tortoises can live <br> a very long time anywhere from 50 to 100 years</p>
+        <h3>Zoi</h3>
+        <p>Zoi, a black cat is one year old, tiger race, <br> it likes playing with people.
+            Also has an excellent balance,<br>  which for its race it is very rare.
+        </p>
+         </div>
         </div>
-      <!-- </div> -->
-      <div class="next"><img src="forward.png" alt=""></div>
-      <div class="prev"><img src="back.png" alt=""></div>
-    </div>
-    <!-- script for ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <!-- script for photo scrolling -->
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-      
-      <script>
-        var swiper = new Swiper(".bookSwiper", {
-          slidesPerView: 3,
-          spaceBetween: 15,
-          loop:true,
-          autoplay: {
-          delay: 5500,
-          disableOnInteraction: false,
-        },
-          navigation: {
-            nextEl: ".next",
-            prevEl: ".prev",
-          },
-        });
-        </script>
+   <script>
+          let i=0;
+          let imgArray=['fish.jpg','rabbit.jpg','Hamsters.jpeg','snake.jpeg','Turtoise.png','zoi.jpg'];
+          function changeImg(){
+              document.getElementById('slideshow').src=imgArray[i];
+               document.getElementById('slideshow').style.fontSize = '35px'; // EDHE QITU
+              if(i<imgArray.length-1){
+                  i++;
+              }
+              else{
+                  i=0;
+              }
+              setTimeout("changeImg()",6000);
+          }
+          document.addEventListener('DOMContentLoaded', changeImg);
+    
+  </script>
         <footer>
           <div class="fundi">
               <p style="margin-left: 1%;">Copyright 2023 Paws and Claws Company.</p>
