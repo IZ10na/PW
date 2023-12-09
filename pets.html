@@ -5,27 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop - Pets</title>
     <style>
-        .animals{
-            margin-left: 60%;
+        .animal-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
         }
+
+        .animal-image {
+            margin-right: 20px;
+        }
+
+        .animal-info {
+            flex-grow: 1;
+        }
+
         .slideshow-image {
-        font-size: 35px; 
-        /* qitu jom munu me ndreq  */
-    }
-      body{
-          background-color: rgb(192, 220, 231);
-      }
-  </style>
+            font-size: 35px;
+        }
+
+        body {
+            background-color: rgb(192, 220, 231);
+        }
+
+        img {
+            margin-top: 2%;
+            width: 410px; 
+            height: 433px;
+            object-fit: cover;
+            border-radius: 15%;
+        }
+        titles{
+            font-size: 180px;
+        }
+        .fundi{
+            margin-top: 1%;
+        }
+        texts{
+            margin-right: 10%;
+        }
+    </style>
     <link rel="stylesheet" href="Home.css">
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <div class="headerContainer">
-        <div class="tab">          
+        <!-- <img src="petlogo.jpg" alt="logo" class="i">  -->
+        <div class="tab">
+            <!-- <div class="logoAndCatalog"> -->
+            
               <h2><ion-icon name="storefront"></ion-icon> Pet Shop</h2>
+            <!-- </div> -->
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
@@ -35,65 +64,63 @@
             <button class="btn" style="width: 210px;"><ion-icon name="call-outline"></ion-icon>(+383) 49-381-881</button>  
         </div>
     </div>
-        <div id="kontenti">
-        <header>
-            <!-- <h2>Slide Show:shfaqja e imazheve</h2> -->
-          <img  id="slideshow"/>
-        </header>
-        <button onclick="changeImg()">Next</button>
-        <div class="animals">
-        <h3>Nemo</h3>
-        <p>Nemo is a clownfish, a type of fish belonging to the <br> family Pomacentridae. 
-            More specifically, he is an Ocellaris clownfish. <br>
-            It is a small, bright, and banded fish, known for its <br>striking coloration and fascinating behavior.
-                </p>
-                <h3>Petter</h3>
-                <p>Peter is a female rabbit, very clever <br>
-                    Female rabbits  in general can have a new litter  <br>of kits every two to three months. 
-                    If something happens to her litter,  <br>she will breed again even sooner.</p>
-          
-        <h3>Ivy</h3> 
-        <p> Ivy is a hamster, very cute one! <br>
-            Hamsters are some of the most popular pets today. <br>
-            Their adorable appearance, fun personality, <br>
-            and relative ease of care makes them a great choice for <br> all households and all ages.
-        </p>
-        <h3>Ebi</h3>
-        <p>Ebi is a snake, people should avoid large  <br> constricting snakes, 
-            venomous snakes, and snakes with more <br>difficult care  requirements, which Ebi it is not one of those
-        </p>
-        <h3>Ella</h3>
-        <p>Ella is a pet tortoise,their kind are popular pets for <br> many people since they are quiet, cute especially as hatchlings, <br>
-             and don't shed any fur. But tortoises can live <br> a very long time anywhere from 50 to 100 years</p>
-        <h3>Zoi</h3>
-        <p>Zoi, a black cat is one year old, tiger race, <br> it likes playing with people.
-            Also has an excellent balance,<br>  which for its race it is very rare.
-        </p>
-         </div>
+    <!-- ... (your existing code) ... -->
+
+    <div id="kontenti">
+        <!-- <header>
+            <img id="slideshow"/>
+        </header> -->
+        
+
+        <div class="animal-container">
+            <div class="animal-image">
+                <img id="currentImage" alt="Nemo" style="margin-left: 10%;">
+            </div>
+            <div class="animal-info">
+                <h3 id="currentTitle" style="margin-left: 35%; font-size: 60px; color: rgb(153, 129, 152);" >Nemo</h3>
+                <p id="currentText" style=" margin-left: 18%; margin-right: 30%; ">Nemo is a clownfish, a type of fish belonging to the family Pomacentridae. More specifically, he is an Ocellaris clownfish. It is a small, bright, and banded fish, known for its striking coloration and fascinating behavior.</p>
+            </div>
+            
         </div>
-   <script>
-          let i=0;
-          let imgArray=['fish.jpg','rabbit.jpg','Hamsters.jpeg','snake.jpeg','Turtoise.png','zoi.jpg'];
-          function changeImg(){
-              document.getElementById('slideshow').src=imgArray[i];
-               document.getElementById('slideshow').style.fontSize = '35px'; // EDHE QITU
-              if(i<imgArray.length-1){
-                  i++;
-              }
-              else{
-                  i=0;
-              }
-              setTimeout("changeImg()",6000);
-          }
-          document.addEventListener('DOMContentLoaded', changeImg);
-    
-  </script>
-        <footer>
-          <div class="fundi">
-              <p style="margin-left: 1%;">Copyright 2023 Paws and Claws Company.</p>
-              <p style="margin-left: 25%;"> All rights reserved ©</p>
-              <p style="margin-left: 25%;">Designed by: ELona Hyseni and Drin Avdiaj</p>
-          </div>
-      </footer>
+        <button onclick="changeImg()" style="margin-left: 14%;">Next</button>
+    </div>
+
+    <footer>
+        <div class="fundi">
+            <p style="margin-left: 1%;">Copyright 2023 Paws and Claws Company.</p>
+            <p style="margin-left: 25%;"> All rights reserved ©</p>
+            <p style="margin-left: 25%;">Designed by: ELona Hyseni and Drin Avdiaj</p>
+        </div>
+    </footer>
+
+    <script>
+        let i = 0;
+        let imgArray = ['fish.jpg', 'rabbit.jpg', 'Hamsters.jpeg', 'snake.jpeg', 'Turtoise.png', 'zoi.jpg', 'dogPro.webp'];
+        let titles = ['Nemo', 'Petter', 'Ivy', 'Ebi', 'Ella', 'Zoi','Bethoven'];
+        let texts = [
+            'Nemo, the lively clownfish, is a resident of the vibrant coral reefs. His striking orange and white stripes not only serve as a visual delight but also play a crucial role in signaling his species recognition. Nemos species, the Ocellaris clownfish, exhibits intriguing social behaviors within a group known as a "clutch." These clutches are often led by a dominant female, showcasing a hierarchical structure. Nemo, with his playful demeanor, engages in intricate courtship dances, creating a spectacle of colors and movements.',
+            'Petter, the clever and expressive female rabbit, thrives on social interactions and environmental enrichment. With her soft fur and distinctive markings, Petter is a joy to cuddle and observe. Female rabbits, including Petter, display remarkable reproductive capabilities, adapting to various environmental conditions. Petters playful antics include binkying, a happy hop and twist often seen in content rabbits. Rabbits, as social creatures, form strong bonds, and Petter enjoys grooming rituals, reinforcing her affectionate nature.',
+            'Ivy, the endearing hamster, is a bundle of energy and curiosity. Her nocturnal adventures unfold in a meticulously arranged habitat filled with tunnels and cozy nests. Hamsters, like Ivy, are known for their exceptional memory and problem-solving skills. Ivys cheek pouches, capable of stretching to nearly double her head size, are not just for storing food but also play a role in establishing territorial scent markings. As a creature of the night, Ivys energetic wheel-running and burrowing make her a delightful companion for those with a nocturnal lifestyle.',
+            'Ebi, the calm and patterned snake, belongs to a family of constrictors, showcasing a sophisticated hunting strategy. Snakes, including Ebi, have specialized scales that aid in precise locomotion and thermoregulation. Ebis non-venomous nature makes interactions with this serpent safe and educational. Constrictor snakes, like Ebi, use their powerful bodies to subdue prey, showcasing the intricate dance between predator and prey in the natural world. Ebis unique patterns and unhurried movements add an element of grace to the fascinating world of reptiles.',
+            'Ella, the delightful pet tortoise, embodies the timeless spirit of her species. With a slow and purposeful gait, Ella navigates her environment, showcasing the patience and resilience characteristic of tortoises. Tortoises, like Ella, have been revered throughout history for their symbolic significance and longevity. Ellas daily routine involves basking in the warmth of sunlight, contributing to her well-being. Tortoises are known to form deep connections with their human companions, offering a sense of tranquility and companionship that transcends the hustle of modern life.',
+            'Zoi, the enchanting black cat of the tiger race, exudes mystery and elegance. Her glossy black fur, adorned with subtle tiger stripes, reflects the timeless allure of black cats in folklore. Zois playfulness extends beyond mere entertainment; it serves as a display of her agility and innate hunting instincts. Black cats, including Zoi, have been celebrated and revered in various cultures for their mystical qualities. Zois distinctive charm lies not only in her physical grace but also in her ability to forge deep bonds with her human companions, offering comfort and joy.',
+            'Beethovens Arctic heritage is evident not only in his spirited demeanor but also in his keen survival instincts honed by generations of resilient sled dogs. His piercing blue eyes, set against the backdrop of his fur, reflect both intelligence and a sense of mystery, drawing admirers into the depths of his expressive gaze. As a dynamic and sociable member of any household, Beethoven effortlessly weaves the threads of tradition and contemporary companionship, embodying the Husky spirit in a captivating fusion of the past and the present.'
+        ];
+
+        function changeImg() {
+            // document.getElementById('slideshow').src = imgArray[i];
+            document.getElementById('currentImage').src = imgArray[i];
+            document.getElementById('currentTitle').innerText = titles[i];
+            document.getElementById('currentText').innerText = texts[i];
+
+            if (i < imgArray.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', changeImg);
+    </script>
 </body>
 </html>
