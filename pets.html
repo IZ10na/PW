@@ -4,83 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pet Shop - Pets</title>
+    <link rel="stylesheet" href="Home.css">
     <style>
-        .animal-container {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
+        script{
+            object-fit: cover;
         }
-
-        .animal-image {
-            margin-right: 20px;
+        .imgArray{
+            object-fit: cover;
+            border-radius: 15%;
         }
-
-        .animal-info {
-            flex-grow: 1;
-        }
-
-        .slideshow-image {
-            font-size: 35px;
-        }
-
         body {
             background-color: rgb(192, 220, 231);
         }
 
         img {
-            margin-top: 2%;
+            margin-top: 1%;
             width: 410px; 
             height: 433px;
-            object-fit: cover;
             border-radius: 15%;
         }
-        titles{
-            font-size: 180px;
-        }
         .fundi{
-            margin-top: 1%;
-        }
-        texts{
-            margin-right: 10%;
+            margin-top: 2%;
         }
     </style>
-    <link rel="stylesheet" href="Home.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body>
     <div class="headerContainer">
-        <!-- <img src="petlogo.jpg" alt="logo" class="i">  -->
         <div class="tab">
-            <!-- <div class="logoAndCatalog"> -->
-            
-              <h2><ion-icon name="storefront"></ion-icon> Pet Shop</h2>
-            <!-- </div> -->
+              <h2><img src="shop.png" alt="store" style="width: 55px; height: 45px;"> Pet Shop</h2>
             <ul>
                 <li><a href="Home.html">Home</a></li>
                 <li><a href="services.html">Services</a></li>
                 <li><a href="services.html">About</a></li>
                 <li><a href="pets.html">Pets</a></li>
             </ul>
-            <button class="btn" style="width: 210px;"><ion-icon name="call-outline"></ion-icon>(+383) 49-381-881</button>  
+            <button class="btn" style="width: 227px;"><img src="telephone.png" alt="phone" style="width: 35px; height: 35px;" >(+383) 49-381-881</button>  
         </div>
     </div>
-    <!-- ... (your existing code) ... -->
-
     <div id="kontenti">
-        <!-- <header>
-            <img id="slideshow"/>
-        </header> -->
-        
-
         <div class="animal-container">
             <div class="animal-image">
-                <img id="currentImage" alt="Nemo" style="margin-left: 10%;">
+                <img id="currentImage" alt="Nemo" style="margin-left: 10%; object-fit: cover;">
             </div>
             <div class="animal-info">
                 <h3 id="currentTitle" style="margin-left: 35%; font-size: 60px; color: rgb(153, 129, 152);" >Nemo</h3>
-                <p id="currentText" style=" margin-left: 18%; margin-right: 30%; ">Nemo is a clownfish, a type of fish belonging to the family Pomacentridae. More specifically, he is an Ocellaris clownfish. It is a small, bright, and banded fish, known for its striking coloration and fascinating behavior.</p>
+                <p id="currentText" style=" margin-left: 18%; margin-right: 30%;">Nemo is a clownfish, a type of fish belonging to the family Pomacentridae. More specifically, he is an Ocellaris clownfish. It is a small, bright, and banded fish, known for its striking coloration and fascinating behavior.</p>
             </div>
-            
         </div>
         <button onclick="changeImg()" style="margin-left: 14%;">Next</button>
     </div>
@@ -88,8 +57,8 @@
     <footer>
         <div class="fundi">
             <p style="margin-left: 1%;">Copyright 2023 Paws and Claws Company.</p>
-            <p style="margin-left: 25%;"> All rights reserved ©</p>
-            <p style="margin-left: 25%;">Designed by: ELona Hyseni and Drin Avdiaj</p>
+            <p style="margin-left: 26%;"> All rights reserved <img src="copyright.png" alt="copyright" style="width: 10px; height: 10px;"></p>
+            <p style="margin-left: 26%;">Designed by: Elona Hyseni and Drin Avdiaj</p>
         </div>
     </footer>
 
@@ -106,9 +75,8 @@
             'Zoi, the enchanting black cat of the tiger race, exudes mystery and elegance. Her glossy black fur, adorned with subtle tiger stripes, reflects the timeless allure of black cats in folklore. Zois playfulness extends beyond mere entertainment; it serves as a display of her agility and innate hunting instincts. Black cats, including Zoi, have been celebrated and revered in various cultures for their mystical qualities. Zois distinctive charm lies not only in her physical grace but also in her ability to forge deep bonds with her human companions, offering comfort and joy.',
             'Beethovens Arctic heritage is evident not only in his spirited demeanor but also in his keen survival instincts honed by generations of resilient sled dogs. His piercing blue eyes, set against the backdrop of his fur, reflect both intelligence and a sense of mystery, drawing admirers into the depths of his expressive gaze. As a dynamic and sociable member of any household, Beethoven effortlessly weaves the threads of tradition and contemporary companionship, embodying the Husky spirit in a captivating fusion of the past and the present.'
         ];
-
+        
         function changeImg() {
-            // document.getElementById('slideshow').src = imgArray[i];
             document.getElementById('currentImage').src = imgArray[i];
             document.getElementById('currentTitle').innerText = titles[i];
             document.getElementById('currentText').innerText = texts[i];
