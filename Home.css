@@ -1,9 +1,3 @@
-/* .head{
-    background-image: url(pets1.jpg);
-    background-size: cover;
-    background-position: center;
-    
-} */
 .headerContainer{
     width: 100%;
     height: 80px;
@@ -46,9 +40,6 @@
     font-weight: bold;
     cursor: pointer;
 }
-/* .tab ul li:first-child{
-    color: blue;
-} */
 .tab ul li:hover{
     color: blue;
 }
@@ -167,7 +158,6 @@
 .photos{
     display: flex;
     justify-content: space-evenly;
-   /* width: 90%;*/
     flex-wrap: wrap;
     margin: 30px;
     border-radius: 30%;
