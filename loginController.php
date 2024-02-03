@@ -42,6 +42,22 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $userRepository = new UserRepository($db);
     $user = $userRepository->getUserByUsername($username);
 
+    //login per admin 1
+    if ($username === "IZ1" && $password === "drin123") {
+        header("Location: dashboard.php");
+        exit();
+    } else {
+        echo "Invalid username or password.";
+    }
+
+    //login per admin 2
+    if ($username === "ona" && $password === "elona123") {
+        header("Location: dashboard.php");
+        exit();
+    } else {
+        echo "Invalid username or password.";
+    }
+
 
     if ($user) {
         $storedPassword = $user["password"] ?? "";

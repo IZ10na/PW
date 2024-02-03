@@ -49,8 +49,8 @@
     <footer>
         <div class="fundi">
             <p style="margin-left: 1%;">Copyright 2023 Paws and Claws Company.</p>
-            <p style="margin-left: 26%;"> All rights reserved <img src="copyright.png" alt="copyright" style="width: 10px; height: 10px;"></p>
-            <p style="margin-left: 26%;">Designed by: Elona Hyseni and Drin Avdiaj</p>
+            <p style="margin-left: 25%;"> All rights reserved <img src="copyright.png" alt="copyright" style="width: 10px; height: 10px;"></p>
+            <p style="margin-left: 25%;">Designed by: Elona Hyseni and Drin Avdiaj</p>
         </div>
     </footer>
 </body>
