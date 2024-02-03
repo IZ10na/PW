@@ -29,6 +29,9 @@ class UserRepository{
 
         echo "<script> alert('User has been inserted successfuly!'); </script>";
 
+        header("Location: home.html");
+        
+
     }
 
     function getAllUsers(){
@@ -76,6 +79,24 @@ class UserRepository{
 
         echo "<script>alert('delete was successful'); </script>";
    } 
+
+    function login($username, $password) {
+    if ($username === "IZ1" && $password === "drin123") {
+        header("Location: dashboard.php");
+        exit();
+    } else {
+        echo "Invalid username or password.";
+    }
+
+    function login($username, $password) {
+        if ($username === "ona" && $password === "elona123") {
+            header("Location: dashboard.php");
+            exit();
+        } else {
+            echo "Invalid username or password.";
+        }
+    }
+}
 }
 
 ?>
